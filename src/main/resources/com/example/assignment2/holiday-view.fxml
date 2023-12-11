@@ -10,7 +10,7 @@
 <AnchorPane stylesheets="@styles.css" minHeight="240.0" minWidth="320.0" prefHeight="400.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2.Controller">
     <children>
         <!-- Header label for the application -->
-        <Label layoutX="250.0" layoutY="10.0" text="Holiday Calendar" styleClass="header-label" />
+        <Label layoutX="250.0" layoutY="10.0" text="Holiday Calendar 2024" styleClass="header-label" />
 
         <!-- ImageView for displaying an icon image -->
         <ImageView fx:id="iconImageView" layoutX="80.0" layoutY="320.0">
