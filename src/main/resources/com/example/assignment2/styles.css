@@ -1,0 +1,48 @@
+.label {
+    -fx-font-size: 18px;
+    -fx-text-fill: #1E88E5;
+}
+
+.button {
+    -fx-font-size: 18px;
+    -fx-background-color: #FF4081;
+    -fx-text-fill: #ffffff;
+}
+
+.date-picker {
+    -fx-font-size: 18px;
+}
+
+.anchor-pane {
+    -fx-background-color: #F3E5F5;
+    -fx-padding: 20px;
+}
+
+.description-label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #757575;
+    -fx-wrap-text: true;
+    -fx-max-width: 400px;
+    -fx-padding: 20px;
+    -fx-background-color: #FFF9C4;
+}
+
+.bulleted-list {
+    -fx-padding: 20px;
+}
+
+.bulleted-list .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+    -fx-padding: 15px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 0 0 1 0;
+}
+
+.bulleted-list .list-cell .bullet {
+    -fx-padding: 0 10px 0 0;
+}
+
+.bulleted-list .list-cell .holiday-info {
+    -fx-padding: 0 0 0 15px;
+}

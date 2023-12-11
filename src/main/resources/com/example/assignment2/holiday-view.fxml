@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane stylesheets="@styles.css" minHeight="240.0" minWidth="320.0" prefHeight="400.0" prefWidth="625.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2.Controller">
+    <children>
+        <!-- Header label for the application -->
+        <Label layoutX="250.0" layoutY="10.0" text="Holiday Calendar" styleClass="header-label" />
+
+        <!-- ImageView for displaying an icon image -->
+        <ImageView fx:id="iconImageView" layoutX="80.0" layoutY="320.0">
+            <!-- Image for the ImageView -->
+            <image>
+                <Image url="@OIP.jpeg" />
+            </image>
+        </ImageView>
+
+        <!-- Label for prompting the user to select a date -->
+        <Label layoutX="14.0" layoutY="50.0" text="Select Date:" />
+
+        <!-- DatePicker for selecting a specific date -->
+        <DatePicker fx:id="datePicker" layoutX="14.0" layoutY="80.0" prefWidth="200.0" />
+
+        <!-- Button to trigger fetching holiday information for the selected date -->
+        <Button layoutX="250.0" layoutY="80.0" mnemonicParsing="false" onAction="#getHolidayInfo" text="Get Holiday Info" />
+
+        <!-- Button to trigger fetching holidays for the selected month -->
+        <Button layoutX="14.0" layoutY="300.0" mnemonicParsing="false" onAction="#getMonthHolidays" text="Get Holidays in Month" />
+
+        <!-- Label to display the name of the selected holiday -->
+        <Label layoutX="14.0" layoutY="150.0" text="Holiday:" />
+        <Label fx:id="holidayNameLabel" layoutX="120.0" layoutY="150.0" />
+
+        <!-- Label to display the description of the selected holiday -->
+        <Label layoutX="14.0" layoutY="190.0" text="Description:" />
+        <Label fx:id="descriptionLabel" layoutX="120.0" layoutY="190.0" wrapText="true" maxWidth="450.0" maxHeight="200.0" />
+    </children>
+</AnchorPane>

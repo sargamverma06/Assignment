@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<!-- AnchorPane for the holiday list view -->
+<AnchorPane stylesheets="@styles.css" styleClass="anchor-pane" minHeight="240.0" minWidth="320.0" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.assignment2.HolidayListController">
+    <children>
+        <!-- ImageView for displaying an icon image -->
+        <ImageView fx:id="iconImageView" layoutX="80.0" layoutY="320.0">
+            <!-- Image for the ImageView -->
+            <image>
+                <Image url="@OIP.jpeg" />
+            </image>
+        </ImageView>
+        <!-- ListView for displaying the holiday information -->
+        <ListView fx:id="holidayListView" layoutX="14.0" layoutY="14.0" prefHeight="600.0" prefWidth="600.0" styleClass="bulleted-list" />
+    </children>
+</AnchorPane>
